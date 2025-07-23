@@ -23,6 +23,10 @@ a:visited {
     color: rgb(255, 255, 255);
 }
 
+a:link {
+    color: rgb(255, 255, 255);
+}
+
 /*•	Specify colors with RGB values or hex codes*/
 main {
     background-color: #3c3c3c;
