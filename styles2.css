@@ -1,0 +1,50 @@
+body {
+    width: 1000px;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header {
+    padding: 20px 0 10px 0;
+}
+
+#sidebarA,
+#sidebarB,
+main {
+    padding: 20px 10px;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#sidebarA {
+    width: 300px;
+    float: left;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+main {
+    width: 300px;
+    float: left;
+}
+
+#sidebarB {
+    width: 300px;
+    float: right;
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+img {
+    width: 250px;
+}
+
+footer {
+    clear: both;
+    font-size: 80%;
+    border: 1px solid rgb(0, 0, 0);
+}

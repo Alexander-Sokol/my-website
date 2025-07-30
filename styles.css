@@ -1,24 +1,26 @@
-/*A type selector and Use at least 2 properties that style fonts*/
+img {
+    height: 600px;
+    width: 75%;
+}
+
 body {
+    font-size: 150%;
     font-family: sans-serif;
     margin: 0%;
     text-align: center;
     list-style-position: inside;
 }
 
-/*An Class Selector*/
-/*least 2 properties that style fonts*/
-/*Use only relative units of measurement*/
 .size {
     font-size: 95%;
 }
 
-/*A relational selector*/
+
 nav ol a:hover {
     text-decoration: solid;
 }
 
-/*pseudo-class selector*/
+
 a:visited {
     color: rgb(255, 255, 255);
 }
@@ -27,15 +29,33 @@ a:link {
     color: rgb(255, 255, 255);
 }
 
-/*•	Specify colors with RGB values or hex codes*/
+
+/*padding*/
 main {
-    background-color: #3c3c3c;
     color: rgb(255, 255, 255);
+    padding: 20px;
+    background-image: url(images/smoke.jpg);
 }
 
-/*A combination selector*/
+
 h1,
 h2 {
-    color: black;
+    color: rgb(0, 0, 0);
     margin: 0;
+}
+
+/*padding*/
+h1 {
+    padding-top: 10px;
+}
+
+/*padding*/
+h2 {
+    padding-bottom: 10px;
+}
+
+/*border*/
+footer {
+    font-size: 80%;
+    border: 2px solid rgb(0, 0, 0);
 }
