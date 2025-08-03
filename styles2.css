@@ -1,50 +1,121 @@
-body {
-    width: 1000px;
+/*Navigation Menu*/
+#nav_menu {
     margin: auto;
-    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 50%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: brown;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-right: 20px solid white;
+}
+
+#nav_menu ul li a:hover {
+    background-color: grey;
+}
+
+/*End of Navigation Menu*/
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: sans-serif;
     text-align: center;
-    padding: 20px 0;
+    padding: 1em 0;
 }
 
 header {
-    padding: 20px 0 10px 0;
-}
-
-#sidebarA,
-#sidebarB,
-main {
-    padding: 20px 10px;
+    padding: 1em 0 1em 0;
+    clear: left;
 }
 
 li {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 #sidebarA {
-    width: 300px;
+    width: 32%;
     float: left;
-    border-right: 2px solid rgb(0, 0, 0);
+    padding-right: 10px;
 }
 
 main {
-    width: 300px;
+    width: 32%;
     float: left;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    padding-right: 10px;
 }
 
 #sidebarB {
-    width: 300px;
-    float: right;
-    border-left: 2px solid rgb(0, 0, 0);
-}
-
-img {
-    width: 250px;
+    width: 32%;
+    float: left;
 }
 
 footer {
     clear: both;
     font-size: 80%;
     border: 1px solid rgb(0, 0, 0);
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration: solid;
+}
+
+img {
+    width: 85%;
+}
+
+br {
+    clear: both;
+}
+
+/*Used media query to fix issue where sidebarB gets pushded down when the viewport is less than 660px. 
+Instead of fixing the width and keeping the same format, changed it to look more user friendly. 
+Can now scroll between different recipes.*/
+
+
+@media only screen and (max-width: 670px) {
+    #sidebarB {
+        float: none;
+        width: 100%;
+    }
+
+    main {
+        float: none;
+        width: 100%;
+        border: none;
+    }
+
+    #sidebarA {
+        float: none;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 250%;
+    }
 }
