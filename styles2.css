@@ -10,7 +10,7 @@
 
 #nav_menu ul li {
     float: left;
-    width: 50%;
+    width: 33%;
 }
 
 #nav_menu ul li a {
@@ -31,15 +31,16 @@
 /*End of Navigation Menu*/
 
 body {
+    font-size: 150%;
+    font-family: sans-serif;
     margin-left: 5%;
     margin-right: 5%;
-    font-family: sans-serif;
     text-align: center;
-    padding: 1em 0;
+    list-style-position: inside;
 }
 
 header {
-    padding: 1em 0 1em 0;
+
     clear: left;
 }
 
@@ -93,11 +94,14 @@ br {
     clear: both;
 }
 
-/*Used media query to fix issue where sidebarB gets pushded down when the viewport is less than 660px. 
-Instead of fixing the width and keeping the same format, changed it to look more user friendly. 
-Can now scroll between different recipes.*/
-
-
+/*Used media query to fix issue where sidebarB gets pushded down when the viewport is less than 660px. Can now scroll between different recipes. Removed borders since no longer needed in vertical view.*/
+@media only screen and (max-width: 900px) {
+    #nav_menu ul li {
+    float: none;
+    width: 100%;
+}
+}
+ 
 @media only screen and (max-width: 670px) {
     #sidebarB {
         float: none;
