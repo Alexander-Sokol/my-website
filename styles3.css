@@ -1,4 +1,6 @@
 /*Flex containers used for navigation menu instead of float.*/
+
+/*----------NAVIGATION MENU----------*/
 #nav_menu ul {
     list-style-type: none;
     display: flex;
@@ -22,6 +24,7 @@
 #nav_menu ul li a:hover {
     background-color: #fe6d13;
 }
+/*----------END OF NAVIGATION MENU----------*/
 
 body {
     font-size: 150%;
@@ -40,12 +43,12 @@ img {
     width: 40%;
 }
 
+/*Section setup for vertical grid layout.*/
 main {
     display: grid;
     grid-template: 100% / 50% 50%;
 }
 
-/*Section setup for vertical grid layout.*/
 section,
 aside {
     background-color: #D2691E;

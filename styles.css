@@ -1,3 +1,5 @@
+/*----------NAVIGATION MENU----------*/
+
 #nav_menu ul {
     list-style-type: none;
     display: flex;
@@ -22,6 +24,8 @@
     background-color: #fe6d13;
 }
 
+/*----------END OF NAVIGATION MENU----------*/
+
 body {
     font-size: 150%;
     font-family: sans-serif;
@@ -37,8 +41,6 @@ img {
     min-width: 300px;
 }
 
-
-
 .size {
     font-size: 95%;
 }
@@ -48,7 +50,6 @@ main {
     padding: 20px;
     background-image: url(images/smoke.jpg);
 }
-
 
 h1,
 h2 {
