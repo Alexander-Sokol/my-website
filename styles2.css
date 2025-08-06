@@ -1,15 +1,10 @@
 /*Navigation Menu*/
-#nav_menu {
-    margin: auto;
-    width: 100%;
-}
-
 #nav_menu ul {
     list-style-type: none;
+    display: flex;
 }
 
 #nav_menu ul li {
-    float: left;
     width: 33%;
 }
 
@@ -21,11 +16,12 @@
     background-color: brown;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    border-right: 20px solid white;
+    border-right: 20px solid #ffd4b9;
+    ;
 }
 
 #nav_menu ul li a:hover {
-    background-color: grey;
+    background-color: #fe6d13;
 }
 
 /*End of Navigation Menu*/
@@ -37,16 +33,7 @@ body {
     margin-right: 5%;
     text-align: center;
     list-style-position: inside;
-}
-
-header {
-
-    clear: left;
-}
-
-li {
-    text-align: left;
-    margin-bottom: 2em;
+    background-color: #ffd4b9;
 }
 
 #sidebarA {
@@ -69,9 +56,7 @@ main {
 }
 
 footer {
-    clear: both;
     font-size: 80%;
-    border: 1px solid rgb(0, 0, 0);
 }
 
 a:visited {
@@ -96,12 +81,19 @@ br {
 
 /*Used media query to fix issue where sidebarB gets pushded down when the viewport is less than 660px. Can now scroll between different recipes. Removed borders since no longer needed in vertical view.*/
 @media only screen and (max-width: 900px) {
+    #nav_menu ul {
+        flex-direction: column;
+    }
+
     #nav_menu ul li {
-    float: none;
-    width: 100%;
+        width: 100%;
+    }
+
+    #nav_menu li {
+        margin: 0 15px 15px 0;
+    }
 }
-}
- 
+
 @media only screen and (max-width: 670px) {
     #sidebarB {
         float: none;

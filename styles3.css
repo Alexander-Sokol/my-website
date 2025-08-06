@@ -1,23 +1,10 @@
-body {
-    font-size: 150%;
-    font-family: sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-    list-style-position: inside;
-}
-
-#nav_menu {
-    margin: auto;
-    width: 100%;
-}
-
+/*Flex containers used for navigation menu instead of float.*/
 #nav_menu ul {
     list-style-type: none;
+    display: flex;
 }
 
 #nav_menu ul li {
-    float: left;
     width: 33%;
 }
 
@@ -29,44 +16,108 @@ body {
     background-color: brown;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    border-right: 20px solid white;
+    border-right: 20px solid #ffd4b9;
 }
 
 #nav_menu ul li a:hover {
-    background-color: grey;
-}
-@media only screen and (max-width: 900px) {
-    #nav_menu ul li {
-    float: none;
-    width: 100%;
-    padding-top: 10px;
-}
+    background-color: #fe6d13;
 }
 
+body {
+    font-size: 150%;
+    font-family: sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background-color: #ffd4b9;
+}
 
-/* FOR NEXT ASSIGNEMNT 
-ul {
-    display: inline-flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+footer {
+    font-size: 80%;
+}
+
+img {
+    width: 40%;
+}
+
+main {
+    display: grid;
+    grid-template: 100% / 50% 50%;
+}
+
+/*Section setup for vertical grid layout.*/
+section,
+aside {
+    background-color: #D2691E;
+    padding: 8px;
+    border-radius: 7px;
+    margin: 20px;
+}
+
+section {
+    height: 75%;
 }
 
 li {
-    background: brown;
-    width: 150px;
-    margin: 0 15px 15px 0;
-    padding: 1em 0;
-    text-align: center;
+    text-align: left;
+    list-style-position: inside;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+article {
+    background-color: #FFE4C4;
+    margin: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
-li:hover {
-    background-color: grey;
+a:visited {
+    color: rgb(0, 0, 0);
 }
-*/
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration: solid;
+}
+
+@media only screen and (max-width: 900px) {
+    #nav_menu ul {
+        flex-direction: column;
+    }
+
+    #nav_menu ul li {
+        width: 100%;
+    }
+
+    #nav_menu li {
+        margin: 0 15px 15px 0;
+    }
+}
+
+@media only screen and (max-width: 1060px) and (min-width: 650px) {
+    main {
+        display: grid;
+        grid-template: none;
+    }
+
+    section {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        display: grid;
+        grid-template: none;
+    }
+
+    section {
+        height: auto;
+    }
+
+    body {
+        font-size: 90%;
+    }
+}
