@@ -1,4 +1,4 @@
-/*Navigation Menu*/
+/*----------NAVIGATION MENU----------*/
 #nav_menu ul {
     list-style-type: none;
     display: flex;
@@ -24,7 +24,7 @@
     background-color: #fe6d13;
 }
 
-/*End of Navigation Menu*/
+/*----------END OF NAVIGATION MENU----------*/
 
 body {
     font-size: 150%;
