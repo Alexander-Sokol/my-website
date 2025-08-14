@@ -14,9 +14,12 @@
     padding: 1em 0;
     text-decoration: none;
     background-color: brown;
-    color: rgb(0, 0, 0);
+    color: white;
     font-weight: bold;
     border-right: 20px solid #ffd4b9;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     ;
 }
 
@@ -80,7 +83,7 @@ br {
 }
 
 /*Used media query to fix issue where sidebarB gets pushded down when the viewport is less than 660px. Can now scroll between different recipes. Removed borders since no longer needed in vertical view.*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     #nav_menu ul {
         flex-direction: column;
     }
@@ -94,7 +97,7 @@ br {
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 780px) {
     #sidebarB {
         float: none;
         width: 100%;

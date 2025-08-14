@@ -15,9 +15,12 @@
     padding: 1em 0;
     text-decoration: none;
     background-color: brown;
-    color: rgb(0, 0, 0);
+    color: white;
     font-weight: bold;
     border-right: 20px solid #ffd4b9;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 #nav_menu ul li a:hover {
@@ -70,7 +73,7 @@ footer {
 }
 
 /*Allows the list items to be vertical for better viewing when viewport is less than 670px*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     #nav_menu ul {
         flex-direction: column;
     }
