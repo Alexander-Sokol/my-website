@@ -1,0 +1,36 @@
+/*This CSS page is only for index.html*/
+
+img {
+    width: 55%;
+    min-width: 300px;
+}
+
+.size {
+    font-size: 95%;
+}
+
+main {
+    padding: 20px;
+    background-color: #D2691E;
+}
+
+main p {
+    background-color: #FFE4C4;
+    margin: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    padding-top: 10px;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+

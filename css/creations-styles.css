@@ -1,0 +1,50 @@
+/*This CSS page is only for creations.html*/
+
+#sidebarA {
+    width: 32%;
+    float: left;
+    padding-right: 10px;
+}
+
+main {
+    width: 32%;
+    float: left;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    padding-right: 10px;
+}
+
+#sidebarB {
+    width: 32%;
+    float: left;
+}
+
+img {
+    width: 85%;
+}
+
+br {
+    clear: both;
+}
+
+@media only screen and (max-width: 780px) {
+    #sidebarB {
+        float: none;
+        width: 100%;
+    }
+
+    main {
+        float: none;
+        width: 100%;
+        border: none;
+    }
+
+    #sidebarA {
+        float: none;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 250%;
+    }
+}

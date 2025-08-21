@@ -1,0 +1,63 @@
+/*This CSS page is for tools.html AND tutorials.html*/
+
+img {
+    width: 40%;
+}
+
+main {
+    display: grid;
+    grid-template: 100% / 50% 50%;
+}
+
+section,
+aside {
+    background-color: #D2691E;
+    padding: 8px;
+    border-radius: 7px;
+    margin: 20px;
+}
+
+
+li {
+    text-align: left;
+    list-style-position: inside;
+}
+
+article {
+    background-color: #FFE4C4;
+    margin: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+iframe {
+    width: 75%;
+    height: 500px;
+    padding-bottom: 75px;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+    main {
+        display: grid;
+        grid-template: none;
+    }
+
+    section {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        display: grid;
+        grid-template: none;
+    }
+
+    section {
+        height: auto;
+    }
+
+    body {
+        font-size: 90%;
+    }
+}
